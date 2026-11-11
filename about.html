@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    background-color: #080F17;
+    color: #E6EDF3;
+    margin: 0;
+    padding: 0 clamp(15px, 4vw, 40px);
+}
+#a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: clamp(24px, 4vw, 39px);
+    border-bottom: 1px solid #1e2a3a;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+#aa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 30px);
+    align-items: center;
+    font-size: clamp(16px, 3vw, 30px);
+}
+#aa a{
+    text-decoration: none;
+    color: #8B9BB0;
+    transition: color 0.3s;
+}
+#aa a:hover{
+    color: #38BDF8;
+}
+#me{
+    text-align: center;
+    font-size: clamp(34px, 7vw, 60px);
+    font-weight: 200;
+    margin: 0;
+}
+#pp{
+    text-align: center;
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: #8B9BB0;
+    margin: 10px 0 0;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+.card{
+    background: #111C2B;
+    border: 1px solid #1e2a3a;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    border-color: #38BDF8;
+}
+.card h3{
+    font-size: clamp(24px, 4vw, 32px);
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: left;
+    padding-top: 0px;
+}
+.card p{
+    line-height: 1.6;
+    color: #8B9BB0;
+}
+.stt strong{
+    font-size: clamp(30px, 5vw, 40px);
+    color: #38BDF8;
+}
+.stt:first-child{
+    border-bottom: 1px solid #1e2a3a;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+#home{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #38BDF8;
+    color: #080F17;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#home:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56,189,248,0.4);
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+.boox, .booox{
+    background: #111C2B;
+    border: 1px solid #1e2a3a;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.boox:hover, .booox:hover{
+    transform: translateY(-5px);
+    border-color: #38BDF8;
+}
+.boox h1, .booox h1{
+    font-size: clamp(28px, 5vw, 40px);
+    text-align: left;
+    margin-top: 0;
+}
+.boox p, .booox p{
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.6;
+    color: #8B9BB0;
+}
+
+@media (max-width: 768px){
+    #a, #aa{
+        justify-content: center;
+        text-align: center;
+    }
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+     <nav>
+        <div id="a">
+            <span style="font-size: 40px;"> ADHYAYAN</span>
+            <div id="aa"> 
+            <span > 
+                <a href="index.html">Home</a>
+            </span>
+             <span > 
+                <a href="about.html">About</a>
+            </span>
+             <span > 
+                <a href="project.html">Projects</a>
+            </span>
+             <span > 
+                <a href="contect.html">Contact</a>
+            </span>
+            </div>
+        </div>
+    </nav>  
+    <section>
+        <div>
+            <h1 id="me">About Me</h1>
+        </div>
+        <div>
+        <p id="pp">A Little about my journey and interests</p>
+        </div>
+        <div class="about-grid">
+            <article class="card">
+                <h3>Who I Am ?</h3>
+                <p>I'm Adhyayan Shukla , a BCA student interested in web development and programming. I enjoy learning new technologies and building things.<br>
+                  I've worked with HTML,CSS,JavaScript,C,C++. Every Language has taught me something ,different form designing clean layouts to thinking like 
+                  a problem solver.</p>
+                  </article>
+                  <article class="card">
+                    <div class="stt">
+                 <strong>5+</strong>
+                 <p>Technologies Learned</p>
+               </div>
+               <div class="stt">
+                <strong>BCA</strong>
+                <p>Education</p>
+               </div>
+            </article>
+        </div>
+        <div class="box">
+            <article class="boox">
+                <h1>My Interest</h1>
+                <p>Web Development .Programming .Problem Solving .Learning New Skills</p>
+            </article>
+            <article class="booox">
+                <h1>My Journey</h1>
+                <p>Learning HTML,CSS,JavaScript, C and C++ Language while improving my development skills through practice. </p>
+            </article>
+        </div>
+    </section>
+</div>
+<div>
+    <a id="home" href="contect.html">Contact Me</a>
+</div>
+</body>
+</html>

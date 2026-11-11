@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #080F17;
+    color: #E6EDF3;
+    margin: 0;
+    padding: 0 clamp(15px, 4vw, 40px);
+}
+#a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: clamp(24px, 4vw, 39px);
+    border-bottom: 1px solid #1e2a3a;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+#aa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 30px);
+    align-items: center;
+    font-size: clamp(16px, 3vw, 30px);
+}
+#aa a{
+    text-decoration: none;
+    color: #8B9BB0;
+    transition: color 0.3s;
+}
+#aa a:hover{
+    color: #38BDF8;
+}
+#my h1{
+    text-align: center;
+    font-size: clamp(34px, 7vw, 60px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#my p{
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    color: #8B9BB0;
+    margin-top: 0px;
+}
+.gridi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+.about{
+    background: #111C2B;
+    border: 1px solid #1e2a3a;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.about:hover{
+    transform: translateY(-5px);
+    border-color: #38BDF8;
+}
+.about h1{
+    text-align: center;
+    font-size: clamp(30px, 6vw, 60px);
+    margin-top: 0px;
+}
+.about p{
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    margin-top: 0px;
+    color: #38BDF8;
+}
+#ppp{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(56,189,248,0.15);
+    color: #38BDF8;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#home{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #38BDF8;
+    color: #080F17;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#home:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56,189,248,0.4);
+}
+#hom{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #38BDF8;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+#hom:hover{
+    background-color: #38BDF8;
+    color: #080F17;
+}
+
+@media (max-width: 768px){
+    #a, #aa{
+        justify-content: center;
+        text-align: center;
+    }
+}*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #080F17;
+    color: #E6EDF3;
+    margin: 0;
+    padding: 0 clamp(15px, 4vw, 40px);
+}
+#a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: clamp(24px, 4vw, 39px);
+    border-bottom: 1px solid #1e2a3a;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+#aa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 30px);
+    align-items: center;
+    font-size: clamp(16px, 3vw, 30px);
+}
+#aa a{
+    text-decoration: none;
+    color: #8B9BB0;
+    transition: color 0.3s;
+}
+#aa a:hover{
+    color: #38BDF8;
+}
+#my h1{
+    text-align: center;
+    font-size: clamp(34px, 7vw, 60px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#my p{
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    color: #8B9BB0;
+    margin-top: 0px;
+}
+.gridi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+.about{
+    background: #111C2B;
+    border: 1px solid #1e2a3a;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.about:hover{
+    transform: translateY(-5px);
+    border-color: #38BDF8;
+}
+.about h1{
+    text-align: center;
+    font-size: clamp(30px, 6vw, 60px);
+    margin-top: 0px;
+}
+.about p{
+    text-align: center;
+    font-size: clamp(18px, 3vw, 30px);
+    margin-top: 0px;
+    color: #38BDF8;
+}
+#ppp{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(56,189,248,0.15);
+    color: #38BDF8;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#home{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #38BDF8;
+    color: #080F17;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#home:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56,189,248,0.4);
+}
+#hom{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #38BDF8;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+#hom:hover{
+    background-color: #38BDF8;
+    color: #080F17;
+}
+
+@media (max-width: 768px){
+    #a, #aa{
+        justify-content: center;
+        text-align: center;
+    }
+}          
+    </style>
+</head>
+<body>
+     <nav>
+        <div id="a">
+            <span style="font-size: 40px;"> ADHYAYAN</span>
+            <div id="aa"> 
+            <span > 
+                <a href="index.html">Home</a>
+            </span>
+             <span > 
+                <a href="about.html">About</a>
+            </span>
+             <span > 
+                <a href="project.html">Projects</a>
+            </span>
+             <span > 
+                <a href="contect.html">Contact</a>
+            </span>
+            </div>
+        </div>
+    </nav>  
+    <section>
+        <div id="my">
+            <h1>My Project</h1>
+        <p>Here are some of the projects I've worked on</p>
+        </div>
+        <div class="gridi">
+            <article class="about">
+                <h1>Student Portal</h1>
+                <p>Work in Progress</p>
+                <p id="ppp">Coming Soon</p>
+            </article>
+        </div>
+    </section>
+<div>
+    <a id="home" href="index.html">Go to home Page</a>
+</div>
+<div>
+    <a id="hom" href="contect.html">Contact Me</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+       *{
+    box-sizing: border-box;
+}
+body{
+    background-color: #080F17;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0 clamp(15px, 4vw, 40px);
+}
+#a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: clamp(24px, 4vw, 39px);
+    border-bottom: 1px solid #1e2a3a;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+#aa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 30px);
+    align-items: center;
+    font-size: clamp(16px, 3vw, 30px);
+}
+#aa a{
+    text-decoration: none;
+    color: #8B9BB0;
+    transition: color 0.3s;
+}
+#aa a:hover{
+    color: #38BDF8;
+}
+section{
+    position: relative;
+    height: auto;
+    min-height: 0;
+}
+#bb{
+    max-width: calc(100% - clamp(200px, 32vw, 340px));
+}
+#b{
+    font-size: clamp(44px, 9vw, 80px);
+    font-weight: 50;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#cc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: clamp(180px, 28vw, 300px);
+    height: clamp(180px, 28vw, 300px);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(56,189,248,0.25), 0 0 35px 8px rgba(56,189,248,0.5);
+}
+#logo{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 9%;
+    mix-blend-mode: lighten;
+}
+#rr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+#rr a{
+    color: #8B9BB0;
+    font-size: 32px;
+    transition: color 0.3s, transform 0.3s;
+}
+#rr a:hover{
+    color: #38BDF8;
+    transform: translateY(-3px);
+}
+#ddd{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: clamp(18px, 3vw, 30px);
+}
+#dd{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #38BDF8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#dd:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56,189,248,0.4);
+}
+#dd a{
+    text-decoration: none;
+    color: #080F17;
+    font-weight: 600;
+}
+#d{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#d:hover{
+    background-color: #38BDF8;
+}
+#d a{
+    text-decoration: none;
+    color: #38BDF8;
+    font-weight: 600;
+}
+#d:hover a{
+    color: #080F17;
+}
+#me{
+    border: 2px solid #38BDF8;
+    border-radius: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #38BDF8;
+    color: #080F17;
+    font-weight: 600;
+    text-decoration: none;
+}
+#about{
+    padding: clamp(15px, 4vw, 40px);
+    font-size: clamp(26px, 4vw, 36px);
+    margin-bottom: 20px;
+    min-height: 320px;
+}
+#about p{
+    max-width: 55%;
+}
+#about::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #38BDF8;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px){
+    #a, #aa{
+        justify-content: center;
+        text-align: center;
+    }
+    #bb{
+        max-width: 100%;
+    }
+    #bb, #about{
+        text-align: center;
+    }
+    #ddd, #rr{
+        justify-content: center;
+    }
+    #cc{
+        position: static;
+        display: block;
+        margin: 25px auto 10px;
+    }
+    #about p{
+        max-width: 100%;
+    }
+    #about > div:last-child{
+        height: auto !important;
+    }
+    #logo{
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #about::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+        
+    </style>
+</head>
+<body>
+  <nav>
+        <div id="a">
+            <span style="font-size: 40px;"> ADHYAYAN</span>
+            <div id="aa"> 
+            <span > 
+                <a href="index.html">Home</a>
+            </span>
+             <span > 
+                <a href="about.html">About</a>
+            </span>
+             <span > 
+                <a href="project.html">Projects</a>
+            </span>
+             <span > 
+                <a href="contect.html">Contact</a>
+            </span>
+            </div>
+        </div>
+    </nav>  
+    <section>
+        <div id="bb">
+    <p>Hello, I'm</p>
+    <h1 id="b">Adhyayan</h1>
+    <h3>BCA Student | Aspiring Web Developer</h3>
+    <p>I'm a passionate learner,exploring the world of web technology<br> 
+    development. I love building simple and useful projects that<br>
+     solve real problems.</p>
+</div>
+<div id="ddd">
+    <span id="dd">
+    <a href="project.html">View Project ➔</a>
+    </span>
+    <span id="d">
+        <a href="contect.html">Contact Me ➔</a>
+    </span>
+</div>
+<div id="rr">
+    <a href="https://github.com/adhyayan8400" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/adhyayan-shukla" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:adhyayanshukla9919@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+<div>
+    <img id="cc" src="harsh.jpeg">
+</div>
+    </section>
+    <hr style="border: none; border-top: 2px solid  #080F17; width: 100%; margin: 30px auto;">
+   <section id="about">
+    <h2>A Little About Me</h2>
+   <p style="font-size: 20px; "> I'm curently pursuing BCA and I'm passionate<br>
+    about web development. I enjoy creating clean<br>
+    responsive websites and learning new<br>
+    technologies. My goal is to build real-world<br>
+    projects and grow as a full stack developer in<br>
+    the future.</p>
+    <div>
+        <span>
+            <a id="me" href="about.html" > Know more about Me</a>
+        </span>
+       <div id="rr">
+    <a href="https://github.com/adhyayan8400" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/adhyayan-shukla" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:adhyayanshukla99191@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+    </div>
+    <div style="height: 0;">
+        <img id="logo" src="logo.jpeg">
+    </div>
+   </section> 
+
+</body>
+</html>
