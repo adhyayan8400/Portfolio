@@ -233,13 +233,13 @@ button:hover{
                 <h2>Send a Message</h2>
                 <p>Have a question or want to collaborate? Drop a Message!</p>
               </div>
-              <form action="https://formspree.io/f/mdegoawl" method="POST">
-                <input type="text" placeholder="Enter Your Full Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="subject">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-              </form>
+                <form action="https://formspree.io/f/mdegoawl" method="POST">
+  <input type="text" name="name" placeholder="Enter Your Full Name" required>
+  <input type="email" name="email" placeholder="Enter Your Email" required>
+  <input type="text" name="subject" placeholder="Subject">
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+                </form>
             </article>
         </div>
     </section>
